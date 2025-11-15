@@ -3,19 +3,7 @@ library(ggplot2)
 library(reshape2)
 
 # Create the data
-data <- data.frame(
-  Genotype = c("Chyabraa", "Atta WO1", "Atta WO2", "Kadila", "Khumal Shaali", 
-               "WK 3165", "Bhardagi", "WK 3092", "Manal", "Hungraco", 
-               "WK 3164", "WK 2787", "Tudkey", "WK 3550", "Hunga", 
-               "Local honey", "WK 2820", "Mudey", "Svongadwan", "Surma", 
-               "Aale", "WK 2891", "Satto Gahu", "WK 1204"),
-  CI1 = c(5, 7, 8, 10, 11, 8, 20, 14, 16, 19, 22, 36, 28, 15, 30, 
-          33, 27, 36, 19, 33, 27, 38, 35, 56),
-  CI2 = c(2, 2, 3, 4, 5, 8, 5, 5, 15, 18, 14, 25, 18, 12, 21, 
-          28, 24, 28, 20, 22, 26, 38, 46, 44),
-  CI3 = c(3, 7, 6, 6, 11, 10, 15, 13, 27, 30, 34, 42, 36, 37, 32, 
-          50, 41, 42, 33, 55, 70, 62, 60, 61)
-)
+data
 
 # Convert genotype to factor to maintain order
 data$Genotype <- factor(data$Genotype, levels = data$Genotype)
